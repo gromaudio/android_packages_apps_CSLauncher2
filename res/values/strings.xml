@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common -->
+    <string name="app_name">CSLauncher2</string>
+
+    <!-- Tabs -->
+    <string name="tab_apps">Apps</string>
+    <string name="tab_cornerstone">Cornerstone</string>
+    <string name="tab_right_panel">Right panel</string>
+
+    <!-- Debug -->
+    <string name="dummy_text">Dummy text</string>
+
+</resources>

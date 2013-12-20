@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Hardware -->
+    <bool name="config_hardwareAccelerated">true</bool>
+    <bool name="config_largeHeap">false</bool>
+
+    <!-- Features -->
+    <bool name="config_gridView">false</bool>
+    <bool name="config_recentsStack">false</bool>
+    <bool name="config_listIcons">false</bool>
+    <bool name="config_recentsListIcons">true</bool>
+
+</resources>

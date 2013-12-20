@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:home="http://schemas.android.com/apk/res/com.onskreen.cornerstone.launcher2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_padding" >
+
+    <!-- All applications on the top side of the screen -->
+
+    <ListView
+        android:id="@+id/all_apps_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:persistentDrawingCache="animation|scrolling"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/all_apps_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:alwaysDrawnWithCache="true"
+        android:columnWidth="@dimen/gv_column_width"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@drawable/grid_selector"
+        android:numColumns="auto_fit"
+        android:persistentDrawingCache="animation|scrolling"
+        android:scrollbars="none"
+        android:stretchMode="spacingWidth"
+        android:visibility="gone" />
+
+    <!-- Favorites and Recents -->
+
+    <com.onskreen.cornerstone.launcher2.ApplicationsStackLayout
+        android:id="@+id/faves_and_recents"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asl_height"
+        android:visibility="gone"
+        home:marginLeft="@dimen/asl_margin"
+        home:marginRight="@dimen/asl_margin"
+        home:stackOrientation="horizontal" />
+
+</LinearLayout>
